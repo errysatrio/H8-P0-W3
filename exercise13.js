@@ -16,20 +16,13 @@ function targetTerdekat(arr) {
             }
         }    
     }
-    for (let j = 0; j < hasil.length; j++) {
-        for (let l = 1; l < hasil.length; l++) {
-            min=hasil[j]
-            if (min-hasil[l] >0 ) {
-                min=hasil[l]
-                return min
-            } else if (min===undefined) {
-                return 0
-            
-            } else {
-                return min
+    for (let j = 0; j < hasil.length-1; j++) {
+            min=hasil[0]
+            if (min-hasil[j+1] > 0 ) {
+                min=hasil[j+1]
             }
-        }
     }
+    return min
 }
   
   console.log(targetTerdekat([' ', ' ', 'o', ' ', ' ', 'x', ' ', 'x'])); // 3

@@ -1,8 +1,12 @@
 function groupAnimals(animals) {
-    var cont1=[]
-    var cont2=[]
-    var cont3=[]
-    if animals[i][0]===
+    var a=[]
+    var b=[]
+    var c=[]
+    for (let i = 0; i < animals.length; i++) {
+      if (animals[i][0]===animals[i+1][0]){
+        cont1.push(animals[i+1])
+      } else 
+    }
 }
   
   console.log(groupAnimals(['cacing', 'ayam', 'kuda', 'anoa', 'kancil']));
