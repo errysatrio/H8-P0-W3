@@ -1,15 +1,10 @@
 function angkaPalindrome(num) {
-    var hasil = 0
-    if (num[0]!==num.length-1) {
-        hasil+=num+1
-        for (let i = 0; i < hasil.length; i++) {
-            if (i>1) {
-                hasil-hasil[hasil.length-1]+hasil[0]
-                return hasil
-            }   
-        } 
-    } 
-    return hasil
+    num+=1
+    if (num.toString().length>1){
+        while(num.toString()[0]!==num.toString()[num.toString().length-1])
+        num++
+    }
+    return num
 }
   
   

@@ -14,4 +14,4 @@ function dataHandling(arr) {
     }
 }
 
-console.log(dataHandling(input))
+dataHandling(input)
